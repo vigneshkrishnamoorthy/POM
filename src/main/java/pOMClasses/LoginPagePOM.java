@@ -48,5 +48,24 @@ public void validLoginToApplication(String uname, String pword)
 
 }
 
+public void invalidUserLogin(String invalidUserName, String validPassword)
+
+{
+	userName.sendKeys(invalidUserName);
+	password.sendKeys(validPassword);
+	SubmitButton.click();
+	
+}
+
+
+public void invalidPasswordLogin(String validUserName, String invalidPassword)
+
+{
+	userName.sendKeys(validUserName);
+	password.sendKeys(invalidPassword);
+	SubmitButton.click();
+	
+}
+
 
 }

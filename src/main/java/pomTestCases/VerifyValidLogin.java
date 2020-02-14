@@ -2,6 +2,7 @@ package pomTestCases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
 
 import pOMClasses.LoginPagePOM;
 import pom_utility.BrowserFactory;
@@ -10,6 +11,7 @@ public class VerifyValidLogin
 
 {
 	
+	@Test (priority =0,invocationCount=2,threadPoolSize =2)
 	public void validateLogin()
 	
 	{
